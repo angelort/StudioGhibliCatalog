@@ -4,8 +4,8 @@ import {
     checkAndParse,
 } from './APIinteraction.js';
 
-const resultsSection = document.querySelector('.locations');
-async function getLocations() {
+const locationsSelect = document.querySelector('.locations');
+export async function getLocations() {
     const res = await fetch(baseUrl + locationsEndpoint);
     const locations = await checkAndParse(res);
     const locationsNames = [];
@@ -24,8 +24,6 @@ async function getLocations() {
             locationName.innerHTML = `${locations[i].name}`;
         }
 
-        resultsSection.appendChild(locationName);
+        locationsSelect.appendChild(locationName);
     }
 }
-
-getLocations();

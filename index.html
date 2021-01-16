@@ -9,6 +9,11 @@
 </head>
 
 <body>
+<!-- Splash Screen -->
+<!-- <div class="splash" id="splash">
+    <h1 class="splash_title fade_in" id="splash_title">Studio Ghibli Catalog</h1>
+</div> -->
+
     <!-- Pequeña información de la app -->
     <header></header>
     <main>
@@ -18,12 +23,11 @@
 
             <h1 id="main_title" class="main_title">Studio Ghibli Catalog</h1>
 
-            <p>Ingresa el nombre de una película del <span> Studio Ghibli</span> para obtener información deseada.</p>
-            <p>Si lo prefieres, también puedes buscar por <span>Personajes</span>, <span>Ubicaciones</span>,
-                <span>Especies </span>o <span>Vehículos</span> que forman parte del Studio.
+            <p>En el siguiente catálogo puedes buscar <span>Películas, </span> <span>Personajes</span>, <span>Ubicaciones</span>,
+                <span>Especies </span>o <span>Vehículos</span> que forman parte del <span>Studio Ghibli</span>.
             </p>
 
-            <form action="/" method="get" target="_blank">
+            <form action="/" id="form">
                 <fieldset>
                     <legend>Completa el campo deseado</legend>
                     <div>
@@ -66,138 +70,11 @@
                 </fieldset>
             </form>
         </section>
-        <!-- <form action="" method="GET" target="_blank">
-
-            <fieldset>
-
-                <legend>Información personal</legend>
-                <div>
-                    <p><label for="name">Nombre<input type="text" id="name" placeholder="Escribe tu nombre" name="name"
-                                required>
-                        </label>
-                    </p>
-                </div>
-                <div>
-                    <p><label for="lastName">Apellido<input type="text" id="lastName" placeholder="Escribe tu apellido"
-                                name="lastName" required></label></p>
-                </div>
-                <div>
-                    <p><label for="email">Correo electrónico<input type="email" id="email"
-                                placeholder="nombre@dominio.com" name="email" required></label></p>
-                </div>
-                <div>
-                    <p> <label for="idCountry">Selecciona tu país de origen</label>
-                        <select id="idCountry" name="country" required>
-                            <option label="Escoge tu país" disabled></option>
-                            <option value="1">México</option>
-                            <option value="2">Estados Unidos</option>
-                            <option value="3">Canadá</option>
-                            <option value="4">Brasil</option>
-                            <option value="5">Argentina</option>
-
-                        </select>
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="phone">Teléfono de contacto</label>
-                        <input type="tel" id="phone" name="phone" placeholder="lada-12-34-56-78"
-                            pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}">
-                    </p>
-                </div>
-                <div>
-                    <p> <label for="description">
-
-                            Descripción personal
-
-                            <textarea id="description" name="description"
-                                placeholder="Tu descripción no debe ser de más de 300 caracteres" cols="20" rows="5"
-                                required></textarea>
-
-                        </label>
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label>¿Estás trabajando actualmente?</label>
-                        
-
-                        </p>
-
-                        <input type="radio" value="yes" id="expYes" name="exp">
-                        <label for="expYes">SI</label>
-                        <input type="radio" value="no" id="expNo" name="exp">
-                        <label for="expNo">NO</label>
-                        <p></p>
-                </div>
-            </fieldset>
-
-            <fieldset>
-
-                <legend>Escoge tu carrera</legend>
-
-                <label>¿A qué carrera deseas inscribirte?</label>
-                <p>
-
-                </p>
-                <div>
-                    <p><label for="uxui"><input type="radio" name="carrer" value="uxui" id="uxui" required>UX/UI</label>
-
-                        <label for="datasciencie"><input type="radio" name="carrer" value="datasciencie"
-                                id="datasciencie">Data
-                            Science</label>
-                        <label for="dwfs"><input type="radio" name="carrer" value="dwfs" id="dwfs">Desarrollo Web Full
-                            Stack</label>
-                        <label for="frontend"><input type="radio" name="carrer" value="frontend" id="frontend">FrontEnd
-                            Avanzado</label>
-
-                    </p>
-                </div>
-                <div>
-                    <label>¿Qué modalidad prefieres?</label>
-                    <p>
-
-                    </p>
-                    <p>
-                        <label for="presencial"><input type="radio" name="modalidad" value="presencial" id="presencial"
-                                required>Presencial</label>
-
-                        <label for="online"><input type="radio" name="modalidad" value="online"
-                                id="online">Online</label>
-
-                        <label for="nopreferencia"><input type="radio" name="modalidad" value="nopreferencia"
-                                id="nopreferencia">No tengo preferencia</label>
-                    </p>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Finalizar</legend>
-                <div>
-                    <p> <input type="submit" value="Enviar mensaje"></p>
-                    <p> <input type="reset" value="Comenzar de nuevo"></p>
-                </div>
-            </fieldset>
-        </form>
-
-        <form action="" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="John">
-            ​
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Doe">
-            ​
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="johndoe@mail.com" required>
-            ​
-            <label for="edad">Edad:</label>
-            <input type="number" min="1" name="edad" id="edad">
-            ​
-            <button type="submit">Enviar</button>
-        </form> -->
         <!-- Sección de respuesta -->
         <section id="results" class="results"></section>
     </main>
+    <script type="module" src="/js/script.js" defer></script>
+    <!-- <script type="module" src="/js/splashScreen.js" defer></script> -->
     <script type="module" src="/js/movieList.js" defer></script>
     <script type="module" src="/js/peopleList.js" defer></script>
     <script type="module" src="/js/locationsList.js" defer></script>

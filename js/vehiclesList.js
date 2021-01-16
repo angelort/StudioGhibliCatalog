@@ -4,8 +4,8 @@ import {
     checkAndParse,
 } from './APIinteraction.js';
 
-const resultsSection = document.querySelector('.vehicles');
-async function getVehicles() {
+const vehiclesSelect = document.querySelector('.vehicles');
+export async function getVehicles() {
     const res = await fetch(baseUrl + vehiclesEndpoint);
     const vehicles = await checkAndParse(res);
     const vehiclesNames = [];
@@ -24,8 +24,6 @@ async function getVehicles() {
             vehicleName.innerHTML = `${vehicles[i].name}`;
         }
 
-        resultsSection.appendChild(vehicleName);
+        vehiclesSelect.appendChild(vehicleName);
     }
 }
-
-getVehicles();

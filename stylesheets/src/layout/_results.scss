@@ -1,6 +1,43 @@
-.list_title {
-  font-size: 1.5rem;
-  color: red;
-  font-style: italic;
-  padding-bottom: 15px;
+.results{
+  text-align: center;
+
+  .title{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before{
+      content: 'Título: ';
+    }
+  }
+  .description{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 2rem;
+    &::before{
+      content: 'Descripción: ';
+    }
+  }.director{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before{
+      content: 'Director: ';
+    }
+  }.producer{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before{
+      content: 'Productor: ';
+    }
+  }.date{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before{
+      content: 'Fecha de lanzamiento: ';
+    }
+  }.title{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before{
+      content: 'Título: ';
+    }
+  }
 }

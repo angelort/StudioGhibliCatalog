@@ -2,3 +2,8 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin background($path) {
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-position: center;
+  }

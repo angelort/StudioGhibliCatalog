@@ -4,8 +4,8 @@ import {
     checkAndParse,
 } from './APIinteraction.js';
 
-const resultsSection = document.querySelector('.species');
-async function getSpecies() {
+const speciesSelect = document.querySelector('.species');
+export async function getSpecies() {
     const res = await fetch(baseUrl + speciesEndpoint);
     const species = await checkAndParse(res);
     const speciesNames = [];
@@ -24,8 +24,6 @@ async function getSpecies() {
             specieName.innerHTML = `${species[i].name}`;
         }
 
-        resultsSection.appendChild(specieName);
+        speciesSelect.appendChild(specieName);
     }
 }
-
-getSpecies();

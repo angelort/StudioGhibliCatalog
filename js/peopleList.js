@@ -4,12 +4,15 @@ import {
     checkAndParse,
 } from './APIinteraction.js';
 
-const resultsSection = document.querySelector('.people');
-async function getPeople() {
+const peopleSelect = document.querySelector('.people');
+let people;
+let namesLength;
+
+export async function getPeople() {
     const res = await fetch(baseUrl + peopleEndpoint);
-    const people = await checkAndParse(res);
+    people = await checkAndParse(res);
     const names = [];
-    const namesLength = people.length;
+    namesLength = people.length;
     console.log(namesLength)
     console.log(people);
 
@@ -24,8 +27,6 @@ async function getPeople() {
             peopleName.innerHTML = `${people[i].name}`;
         }
 
-        resultsSection.appendChild(peopleName);
+        peopleSelect.appendChild(peopleName);
     }
 }
-
-getPeople();
