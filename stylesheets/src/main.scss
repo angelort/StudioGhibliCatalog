@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// 1. Base
+@import "base/fonts"; 
+// 2. Vendors
+
+@import "vendors/resetcss", "vendors/normalize";
+
+body{
+    font-family: 'Yusei Magic', sans-serif;
+    padding-bottom: 100px;
+}
+
+// 4. Layout-related sections
+@import "layout/header";
+@import "layout/form";
+@import "layout/results";
