@@ -2,5 +2,9 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 header{
-    padding: 50px;
+    text-align: center;
+   .searchGif{
+       position: relative;
+       width: 10%;
+   }
 }

@@ -2,20 +2,27 @@
   h1 {
     text-align: center;
     font-size: 4rem;
+    font-weight: 800;
   }
   p{
+    line-height: 2.5rem;
     margin: 5%;
     text-align: justify;
     font-size: 2rem;
     font-weight: 400;
     span{
-      color: goldenrod;
+      color: #2216cc;
       font-weight: 600;
     }
+  }
+  label{
+    font-weight: 600;
   }
   legend{
     text-align: center;
     font-size: 1.5rem; 
+    font-weight: 600;
+
   }
   div{
     display: flex;
@@ -40,9 +47,9 @@
   }
 }
 
-.list_title {
+.list_option {
   font-size: 1.5rem;
-  color: red;
+  color: #2216cc;
   font-style: italic;
   padding-bottom: 15px;
 }

@@ -1,43 +1,145 @@
-.results{
+.results {
   text-align: center;
-
-  .title{
+  background-color: #48AEF0;
+  h3{
+    padding-top: 30px;
+  }
+  p{
+    margin: 0 15px;
+    padding-bottom: 30px;
+  }
+  .title {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    &::before{
-      content: 'Título: ';
+    &::before {
+      content: "Título: ";
     }
   }
-  .description{
+  .description {
     font-size: 1.5rem;
     margin-bottom: 15px;
     line-height: 2rem;
-    &::before{
-      content: 'Descripción: ';
+    &::before {
+      content: "Descripción: ";
     }
-  }.director{
+  }
+  .director {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    &::before{
-      content: 'Director: ';
+    &::before {
+      content: "Director: ";
     }
-  }.producer{
+  }
+  .producer {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    &::before{
-      content: 'Productor: ';
+    &::before {
+      content: "Productor: ";
     }
-  }.date{
+  }
+  .date {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    &::before{
-      content: 'Fecha de lanzamiento: ';
+    &::before {
+      content: "Fecha de lanzamiento: ";
     }
-  }.title{
+  }
+  .title {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    &::before{
-      content: 'Título: ';
+    &::before {
+      content: "Título: ";
+    }
+  }
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Nombre: ";
+    }
+  }
+  .gender {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Género: ";
+    }
+  }
+  .age {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Edad: ";
+    }
+  }
+  .eye_color {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Color de ojos: ";
+    }
+  }
+  .hair {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Color de cabello: ";
+    }
+  }
+  .films {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Filmes en los que aparece: ";
+    }
+  }
+  .species {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Especie: ";
+    }
+  }
+  .climate {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Clima: ";
+    }
+  }
+  .terrain {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Terreno: ";
+    }
+  }
+  .surface_water {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Superficie de agua: ";
+    }
+  }
+  .classification {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Clasificación: ";
+    }
+  }
+  .vehicle_class {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Clase de vehículo: ";
+    }
+  }
+  .vehicle_length {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    &::before {
+      content: "Longitud del vehículo: ";
     }
   }
 }

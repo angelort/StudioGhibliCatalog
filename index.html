@@ -10,26 +10,27 @@
 
 <body>
 <!-- Splash Screen -->
-<!-- <div class="splash" id="splash">
+<div class="splash" id="splash">
     <h1 class="splash_title fade_in" id="splash_title">Studio Ghibli Catalog</h1>
-</div> -->
+</div>
 
     <!-- Pequeña información de la app -->
-    <header></header>
+    <header>
+<img src="https://media1.tenor.com/images/32b8bd30473ec97f9f4f85c5eedb345d/tenor.gif?itemid=16761523" alt="gif" class="searchGif"></header>
     <main>
+<div class="background" id="background"></div>
 
         <!-- Sección que incluye el formulario donde el usuario va a hacer su solicitud -->
         <section id="principal_form" class="principal_form">
 
             <h1 id="main_title" class="main_title">Studio Ghibli Catalog</h1>
 
-            <p>En el siguiente catálogo puedes buscar <span>Películas, </span> <span>Personajes</span>, <span>Ubicaciones</span>,
-                <span>Especies </span>o <span>Vehículos</span> que forman parte del <span>Studio Ghibli</span>.
+            <p>En el siguiente catálogo puedes buscar <span>Películas</span>, <span>Personajes</span>, <span>Ubicaciones</span>, <span>Especies </span>o <span>Vehículos</span> que forman parte del <span>Studio Ghibli</span>.
             </p>
 
             <form action="/" id="form">
                 <fieldset>
-                    <legend>Completa el campo deseado</legend>
+                    <legend>Selecciona una opción de las listas</legend>
                     <div>
                         <label for="movie">Película:</label>
                         <select name="movie" id="movie" class="movie">
@@ -62,7 +63,7 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>¿Buscar?</legend>
+                    <legend>¿Has terminado?</legend>
                     <div id="btns" class="btns">
                         <input type="submit" value="Si" id="submit_btn" class="submit_btn btn">
                         <input type="reset" value="Comenzar de nuevo" id="reset_btn" class="reset_btn btn">
@@ -71,15 +72,13 @@
             </form>
         </section>
         <!-- Sección de respuesta -->
-        <section id="results" class="results"></section>
+        <section id="results" class="results">
+        </section>
+        <!-- Sección que muestra la información seleccioanda por el usuario -->
+        <section id="info" class="info"></section>
     </main>
     <script type="module" src="/js/script.js" defer></script>
-    <!-- <script type="module" src="/js/splashScreen.js" defer></script> -->
-    <script type="module" src="/js/movieList.js" defer></script>
-    <script type="module" src="/js/peopleList.js" defer></script>
-    <script type="module" src="/js/locationsList.js" defer></script>
-    <script type="module" src="/js/speciesList.js" defer></script>
-    <script type="module" src="/js/vehiclesList.js" defer></script>
+    <script type="module" src="/js/splashScreen.js" defer></script>
 </body>
 
 </html>

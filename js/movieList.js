@@ -22,7 +22,7 @@ export async function getMovies() {
 
         const movieTitle = document.createElement('option');
         movieTitle.value = films[i].title;
-        movieTitle.classList.add('list_title');
+        movieTitle.classList.add('list_option');
 
         if (i !== filmsLength) {
             movieTitle.innerHTML = `${films[i].title}`;
@@ -65,6 +65,8 @@ movieSelect.onchange = () => {
     for (let i = 0; i < filmsLength; i++) {
         if (films[i].title === movieSelect.value) {
             movieDetails(films[i]);
+            sessionStorage.setItem("movie", movieSelect.value);
+            console.log(sessionStorage.getItem("movie"));
             return;
         }
     }
